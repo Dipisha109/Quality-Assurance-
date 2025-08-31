@@ -1,0 +1,17 @@
+using or & and: and is to go from one set to another, or is usd to reset something.
+
+Starts-with: //label[starts-with(@id,'message')]  locates different elements of same type.
+
+following: next tag following another is following tag.//*[@type='text']//following::input[1] use 1 to locate only one.
+
+ancestor: //*[text()='Enterprise Testing']//ancestor::div
+used * to search specific one div tag, if not used * all contents of div is located. lunai euta node ko parents, grandparents locate garxa. list of items kun section ma xa locate garna.
+
+child: //*[@id='java_technologies']//child::li
+
+Preceding: ulto of following
+
+following-sibling: suppose you have div tag and multiple input inside div, after that div is closed if we use name and try to locate password several other items may be located. but following-sibling locates only one password item.
+
+parent: parent element of element. similar to ancestor but sncestor provides all element but parent provides only one. 
+

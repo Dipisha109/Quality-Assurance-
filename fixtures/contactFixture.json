@@ -1,0 +1,15 @@
+{
+    "contact":{
+        "firstName": "Dipisha",
+         "lastName": "Maharjan",
+         "dateOfBirth":"2004-07-13",
+         "email":"dipisha@gmail.com",
+         "phone": "9874676384",
+         "address": "Tahachal",
+         "city": "Kathmandu"
+    },
+
+    "contactEdit":{
+        "firstName": "Hello"
+    }
+}

@@ -1,0 +1,54 @@
+RTM (Requirements Traceability Matrix): mapping just like test case using row and column. Requirements for eg:(REQ8->TestC5, TESTC8/ REQ1-> TEST1)
+
+Test Management: 
+- Test Organization: Define roles in the testing process
+- Test estimation: time required to estimate how long and how much testing cost. Total time must not be longer than estimated.(resources, time, human skill, cost)
+- Test Monitoring and control(steps): Create monitoring plan-> update progress report, analyze record and make adjustments, procedure the report)
+
+Risk Analysis: Analysis of risks that may occur/ their probability of occurrence(controllable/ uncontrollable) {identify risk-> analyze its impact, take counter measurements)
+
+
+
+Defect management: Identify bugs 
+Defect Management process: discovery of defect, defect categorization, fixing defect by developers, verification by testers, defect closure, defect reports.
+
+ Tools for automation: Playwrite using JS (node js)
+Playwrite: Open source, testing apis, designing the tests,
+ auto-waiting of elements: when websites are slow and page loading is also slow at that time, other apps would semd fail notification in 3 secs but playwrite would not directly say it has failed but wait for certain time.
+
+
+-----Automation:---
+
+Annotations: to define all the tests
+- test.beforeAll: configurations, database connections
+- test.beforeEach: available tests haru bhanda agadi
+- test.describe: 
+- test:
+- test.skip: leave one and skip that and move to next. 
+- test.fail: this test might be fail
+- test.only: only run one
+- test.slow: when applications are slow, if we have defended any test as test.slow it becomes slow 2 to 3 times
+- test.afterEach: kunai test sakepaxi yo test garne( after beforeEach), for eg: closing brower after login
+- test.AfterAll: sabai sakepaxi , paxi ko ni rakhna milxa
+
+Assertion:
+status updation after test, to check expected results, veifications, validation. call expect(value)
+we use asynchronous function we use locator: await expect(page.getByTestId('status')).toHaveText('submitted');
+-Auto-retrying assertions: for default time retry assertion 
+-NOn-retrying assertions: try once, if found ok else fails.
+-Negative matchers: negative ayera ni pass vayo vane.
+- soft assertions: if 10 are pass and 11 is fail it wil again start detecting process from 12
+-Hard assertion:  
+
+
+assertions, locators: to find webelements like to insert name; playwrite has given default locators , 
+
+
+npx playwright test tests/contact.spec.js --project chromium --headed
+
+xpath guru99: absolute path- whole from first to last, only for static
+ relative path- choose only the direct path you want to change.
+ to use basic Xpath: //input[@name='email'] first click ctrl+shift+i then click ctrl+f the put the basic syntax on search space and it will locate by highlighting.
+
+to use contains: at the time when we want to find something in middle of two text.//*[contains(text(),'here')]
+
